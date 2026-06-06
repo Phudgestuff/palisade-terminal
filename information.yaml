@@ -1,9 +1,130 @@
-introtext: |
+# NOTE FOR ANYBODY WHO WANTS TO ADD TO THIS
+# USE THIS FORMAT: (<name> is the name that the user types in to get the info)
+#
+# <name>: |-
+#   text text text
+#
+# Do not forget the |-
+# Otherwise I will kill you!!!
+
+introtext: |-
   Welcome to the P.A.L.I.S.A.D.E. Interactive Information Terminal.
   
   All information is strictly confidential. Close this program as soon as you are finished using it.
   
-  Query information by typing the name of what you are looking for.
+  Query information by typing the name of what you are looking for (shown in square brackets).
 
-two: |
-  this is some other text
+  Recommended areas of interest:
+    * PALISADE Initiation [initiation]
+    * Memetophage Incident Archives [archives]
+    * Log of Operational Task Forces [task forces]
+    * Log of Task Force Personnel [personnel]
+
+initiation: |-
+  P.A.L.I.S.A.D.E Initiation Information
+  — — — — — — — — — — — — — — — — — — — — — 
+
+  Welcome new recruit, to Palisade; the Protective Agency for Liminal and Irregular Spatial Anomalies, Detection, and Enforcement. 
+
+  If you are reading this it is to be presumed you have been inducted into our agency, whether this is voluntary or you have been “Compelled” to join makes no difference. You have now become an agent, your position and existence has now become classified, as part of your introductory package any and all unspent criminal convictions have been cleared, all documents detailing your life have been permanently erased, all personal articles not on your person have been incinerated and all existing family members, friends, acquaintances or other individuals aware of you have had their memories altered to avoid the leaking of cognito-hazardous material.
+
+  As of now, your position is classified as being of Class 5 importance, this means you have the minimum clearance required to know about Liminal, Irregular and Spatial Anomalies, including but not limited to the Memetophage phenomena. It should be noted this is the lowest level of clearance provided at Palisade, should you work diligently for the cause, your clearance and rank will be increased in accordance, as will your salary. 
+
+  For a brief history of PALISADE, type [history].
+  For information on the clearence system, type [clearance system].
+  For information on the Memetophage Phenomena, type [memetophage]
+  For information on the Host Temperance Experiments, type [hte]
+
+history: |-
+  A brief History of P.A.L.I.S.A.D.E;
+
+  P.A.L.I.S.A.D.E as an organisation was formed in England in 1838 after the continued appearance of the Transitional Class Memetophage nicknamed Spring-Heeled Jack, by one Henry Beresford, 3rd Marquess of Waterford. Using his at the time impressive wealth, connections and education he founded P.A.L.I.S.A.D.E which at the time was called The Society for the Investigation of Extraordinary Occurrences, this name would later be changed in 1896 to the Office of Irregular Affairs when it was recognised as an official classified branch of the government by the UK and then once more to P.A.L.I.S.A.D.E. in 1948 when the branch was accepted as an international agency by the UN security council and granted authority of the highest order.
+
+  At the current moment, P.A.L.I.S.A.D.E. has 17 major bases around the globe and several hundred other smaller black-sites for investigation and research. As well as this, we have agents in every major government agency in the world with the exceptions of North Korea, Iran, Taliban ruled Afghanistan and Israel.
+
+  The main HQ for P.A.L.I.S.A.D.E. is kept in an advanced high-class extra-government facility in York England at [EXPUNGED], [EXPUNGED].
+
+  Other major bases are housed in;
+
+  * Edinburgh, Scotland
+  * London, England
+  * Prague, Czech Republic
+  * Rome, Italy
+  * Istanbul, Turkiye
+  * Cairo, Egypt
+  * Addis Ababa, Ethiopia
+  * Kyoto, Japan
+  * Beijing, China
+  * Moscow, Russia
+  * Salem, USA
+  * New Orleans, USA
+  * Junee, Australia
+  * Roswell / Nevada Test Range Complex, USA
+  * Lima, Peru
+  * Auckland, New Zealand
+
+  A brief history of PALISADE [history] 
+  The clearence system [clearance system]
+  Memetaphage Phenomena [memetophage]
+  The Host Temperance Experiments [hte]
+
+clearance system: |-
+  The Palisade organisation utilises a series of six classes indicating the amount of knowledge able to be held by the recipients under this class, as a recruit you will be of class 5, meaning you will only know basic details of Memetophage classification, profiles and incidents. Insistence upon obtaining more knowledge when of an inappropriate rank will result in your immediate termination.
+
+  Each class has several ranks within it, with each rank your authority over the ranks below you increase as does your pay. You will receive a rank slide signifying your new rank and a coloured epaulette will be provided indicating your Class. These are to be worn at all times unless in civilian attire, in an emergency situation or while undercover.
+
+  The classes are as such;
+
+  * Class 5; Initiates, Privates and Lance Corporals. Navy Epaulettes.
+  * Class 4; Corporals, Lance Sergeants and Sergeants. Turquoise Epaulettes.
+  * Class 3; Sergeant First Class, Master Sergeant and Sergeant Major. Violet Epaulettes.
+  * Class 2; Major, General and Lieutenant General. Grey Epaulettes.
+  * Class 1; Colonel, Captain and Warrant Officer. Black Epaulettes.
+  * Special Class;  Independent Investigator. Maroon Epaulettes.
+
+
+  It should be noted the Independent Investigator rank and Special Class level of clearance are reserved only for those in the organisation of especially high skill and prestige. To date only 7 agents have received the rank of Independent Investigator. It is a rank reserved for those that Palisade trusts to investigate, catalogue, containment and/or neutralisation of high risk Memetophages.
+
+  A brief history of PALISADE [history] 
+  Memetaphage Phenomena [memetophage]
+  The Host Temperance Experiments [hte]
+
+memetophage: |-
+  In this short briefing, you will learn the bare minimum knowledge required for new recruits to begin missions to extract, neutralise or contain memetophages to prevent a Ragnarok level extinction event.
+
+  The Memetophage phenomenon refers to the breaching of our reality by what is believed to be an alternate dimension. As far as we are aware these breaches have occurred throughout human history though have only been catalogued in recent centuries thanks to the progression of modern science.
+
+  The entities responsible for these breaches have been labeled Memetophages or more simply Memory Eaters. This is due to their tendency to feed upon human memories in order to achieve a corporeal form. Until this form has been achieved there is no known way to neutralise or contain a Memetophage, regrettably this means a host must be sacrificed in order to neutralise or contain a Memetophage. Though it should be noted that multiple Memetophages can come from a single host and a single Memetophage can stem from a host community. Fortunately neutralisation of a Memetophage is not always fatal to the Host but can be in rare cases of total infection.
+
+  Further details will be provided on a Need-to-Know basis. As an Initiate, the knowledge required is rather basic; the details enclosed below are the limits of your current required knowledge, any attempts to seek out more knowledge will result in a pay-cut or in more serious offenses, your termination;
+
+  A Memetophage will feed off of the information stored within a Host or Host communities memories, using this information the Memetophage will assume a corporeal form, this manifests most commonly as an item or entity of worship, great importance or of great fear. 
+
+  These Memetophage by currently unknown anomalous means manifest unique abilities according to their form and the beliefs and memories of their hosts, leading to great variation in Memetophage morphology.
+
+  Some examples of Famous Memetophage incidents may include, the emergence of Spring-Heeled Jack, The Roswell incident, The Salem Witch Trials, Skinwalker Ranch, The Dyatlov Pass Incident, etc.
+
+  Memetophages may change Hosts as Host Populations ages, they also grow more powerful with age, as such they are ranked upon a 4 point scale, with each level signifying an age and their danger threshold, these will be listed below starting with the youngest, aging in descending order;
+
+  * Contemporary - “Born” within the last 100 years
+  * Transitional - “Born” within the last 101-500 years
+  * Classical - “Born” within the last 501-2000 years
+  * Ancient - “Born” within the last 2001-10,000 years
+  * Primordial - “Born” at least 10,000 years ago
+
+  A brief history of PALISADE [history] 
+  The clearence system [clearance system]
+  The Host Temperance Experiments [hte]
+
+hte: |-
+  This is a highly classified series of experiments, the information on these is highly redacted. As such the only details provided in this briefing will be those necessary to your work as an Initiate.
+
+  The Host Temperance Experiments, codenamed Project Engram, took place in 1977. over 150 Memetophage hosts were taken into custody by Palisade. These hosts were particularly those with whom an intensely strong bond to the Memetophage feeding on them was formed, over 40% of the Subjects had their own bodies become the corporeal form of their Memetophage, a further 70% of these subjects had retained control of their bodies working in tandem with the Memetophage.
+
+  The goal of these tests was to create a super-force of Palisade agents able to symbiotically control and work with the Memetophages they hosted in order to access the power they possessed. This was accomplished by a unique form of meditation accompanied by the testing of psychoactive drugs and exposure to Hypno-therapy. In the end, satisfactory results were seen in 42 of the subjects, all bar [REDACTED], of which were those who had become the corporeal forms for a Memetophage and those who had retained their own consciousness.
+
+  These results were deemed a great success and the Host Temperance experiments were closed, the 108 subjects who had failed to display control over their Memetophage either succumbed to complications involved in the testing, were contained or terminated. From the 42 successful subjects, 4 task forces were formed. All of these Subjects now rank as Lieutenant or Higher.
+
+  A brief history of PALISADE [history] 
+  The clearence system [clearance system]
+  Memetaphage Phenomena [memetophage]

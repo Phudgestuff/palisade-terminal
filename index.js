@@ -33,6 +33,7 @@ function startTypeWriter(textToType) {
             }
             index++;
             output.innerHTML += currentOutput;
+            output.scrollIntoView({ behavior: 'auto', block: 'end' })
             // Wait and call the function again for the next character
             setTimeout(typeWriter, typingSpeed);
         }
@@ -83,6 +84,7 @@ input.addEventListener('keydown', (event) => {
         } else {
             startTypeWriter(`Error: No entry found for \`${input.value}\``)
         }
+        output.scrollIntoView({ behavior: 'auto', block: 'end' })
         input.value = "";
     }
 });

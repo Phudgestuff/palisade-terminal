@@ -11,7 +11,7 @@ body {
 }
 
 .scanline {
-    position: absolute;
+    position: fixed;
     left: 0;
     background-color: grey;
     width: 100%;
@@ -36,7 +36,7 @@ body {
 
 .output {
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     padding-left: 10px;
 }
 
@@ -62,11 +62,12 @@ input::placeholder{
     position: fixed;
     width: 100%;
     left: 0;
-    bottom: 10px;
+    bottom: 0;
     font-size: var(--prompt-font-size);
     background-color: black;
     border-top: solid 2px green;
     padding-top: 10px;
+    padding-bottom: 10px;
     z-index: 100;
 }
 
