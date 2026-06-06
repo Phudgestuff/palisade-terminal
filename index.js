@@ -19,7 +19,7 @@ for (let i = 0; i < height-scanLineSpace; i += scanLineSpace) {
 const output = document.getElementById("output");
 function startTypeWriter(textToType) {
     let index = 0;
-    const typingSpeed = 20; // Delay between characters in milliseconds
+    const typingSpeed = 5; // Delay between characters in milliseconds
 
     function typeWriter() {
         if (index < textToType.length) {
