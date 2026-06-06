@@ -5,9 +5,7 @@
 </head>
 <body>
     <div class="title-box">P.A.L.I.S.A.D.E. Information Terminal</div>
-    <div class="output" id="output">some example text here<br>
-    welcome to the palisade uhh thing and we finna show you how we do it ig
-    </div>
+    <div class="output" id="output"></div>
     <div class="input-box">
         &nbsp>&nbsp
         <input id="input" class="input" placeholder="Type prompt" autofocus>
@@ -31,5 +29,32 @@
             el.style.top = `${i}px`;
             scanlinesDiv.appendChild(el);
         }
+
+        // add text to the terminal output part by part
+        let targetDiv = document.getElementById("output");
+        let textToType = `Welcome to the P.A.L.I.S.A.D.E. Interactive Information Terminal.\n
+        All information is strictly confidential. Close this program as soon as you are finished using it.\n
+        Query information by typing the name of what you are looking for.`;
+        let index = 0;
+        const typingSpeed = 20; // Delay between characters in milliseconds
+
+        function typeWriter() {
+            if (index < textToType.length) {
+                // Append the current character to the div
+                let currentOutput;
+                if (textToType.charAt(index) === "\n") {
+                    currentOutput = "<br>";
+                }
+                else {
+                    currentOutput = textToType.charAt(index);
+                }
+                index++;
+                targetDiv.innerHTML += currentOutput;
+                // Wait and call the function again for the next character
+                setTimeout(typeWriter, typingSpeed);
+            }
+        }
+
+        typeWriter();
     </script>
 </body>
