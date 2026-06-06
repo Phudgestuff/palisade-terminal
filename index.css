@@ -1,0 +1,75 @@
+:root {
+    --font-size: 20px;
+    --prompt-font-size: 30px;
+}
+
+body {
+    font-family: "Courier New";
+    background-color: black;
+    color: green;
+    overflow-x: hidden;
+}
+
+.scanline {
+    position: absolute;
+    left: 0;
+    background-color: grey;
+    width: 100%;
+    opacity: 0.15;
+    height: 2px;
+    pointer-events: none;
+}
+
+.title-box {
+    font-size: var(--prompt-font-size);
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 100;
+    border-bottom: solid 2px green;
+    padding-top: 5px;
+}
+
+.output {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+}
+
+.input{
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    color: green;
+    font-family: "Courier New";
+    font-weight: bold;
+    width: 75%;
+    font-size: var(--prompt-font-size);
+    caret-color: transparent;
+    justify-content: center;
+}
+input::placeholder{
+    color: green;
+    opacity: 0.3;
+}
+
+.input-box {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 10px;
+    font-size: var(--prompt-font-size);
+    background-color: black;
+    border-top: solid 2px green;
+    padding-top: 10px;
+    z-index: 100;
+}
+
+.output {
+    font-size: var(--prompt-font-size);
+}

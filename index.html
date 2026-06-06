@@ -1,7 +1,35 @@
 <!DOCTYPE html>
 <head>
-    <title>Palisade terminal</title>
+    <link rel="stylesheet" href="index.css">
+    <title>P.A.L.I.S.A.D.E. Terminal</title>
 </head>
 <body>
-    test
+    <div class="title-box">P.A.L.I.S.A.D.E. Information Terminal</div>
+    <div class="output" id="output">some example text here<br>
+    welcome to the palisade uhh thing and we finna show you how we do it ig
+    </div>
+    <div class="input-box">
+        &nbsp>&nbsp
+        <input id="input" class="input" placeholder="Type prompt" autofocus>
+    </div>
+    <div id="scanlines"></div>
+
+    <script>
+        // make sure the input box is always focused on
+        let inputSpace = document.getElementById("input");
+        inputSpace.addEventListener('blur', () => {
+            inputSpace.focus();
+        });
+
+        // create scanlines for CRT effect
+        let scanlinesDiv = document.getElementById("scanlines");
+        let height = window.innerHeight;
+        let scanLineSpace = 15; 
+        for (let i = 0; i < height-scanLineSpace; i += scanLineSpace) {
+            let el = document.createElement("div");
+            el.className = "scanline";
+            el.style.top = `${i}px`;
+            scanlinesDiv.appendChild(el);
+        }
+    </script>
 </body>
