@@ -16,7 +16,7 @@ for (let i = 0; i < height-scanLineSpace; i += scanLineSpace) {
 }
 
 // add text to the terminal output part by part
-const targetDiv = document.getElementById("output");
+const output = document.getElementById("output");
 function startTypeWriter(textToType) {
     let index = 0;
     const typingSpeed = 20; // Delay between characters in milliseconds
@@ -32,7 +32,7 @@ function startTypeWriter(textToType) {
                 currentOutput = textToType.charAt(index);
             }
             index++;
-            targetDiv.innerHTML += currentOutput;
+            output.innerHTML += currentOutput;
             // Wait and call the function again for the next character
             setTimeout(typeWriter, typingSpeed);
         }
@@ -41,23 +41,48 @@ function startTypeWriter(textToType) {
     typeWriter();
 }
 
-// get the data from the information.json file
-async function fetchJSONData() {
+// get the data from the information.yaml file
+async function fetchYAMLData() {
     try {
-        const response = await fetch('information.json');
+        const response = await fetch('information.yaml');
         if (!response.ok) {
             throw new Error();
         }
 
-        let data = await response.json();
-
-        startTypeWriter(data["introtext"]);
-    } catch (error) {
-        console.error("unable to fetch data")
+        // 1. Get the raw YAML text from the response
+        const yamlText = await response.text();
+        
+        // 2. Parse the YAML text into a native JavaScript object
+        return jsyaml.load(yamlText);
+    } catch {
+        console.error("unable to fetch data");
+        return null; // Returning null keeps the data structure predictable if it fails
     }
 }
-fetchJSONData();
-new Promise((resolve, reject) => startTypeWriter(text));
+
+const data = await fetchYAMLData();
+
+startTypeWriter(data["introtext"])
 
 const input = document.getElementById("input");
-
+input.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        if (output.innerHTML === "") {
+            output.innerHTML += `<b>> ${input.value}</b><br>`;
+        } else {
+            output.innerHTML += `<br><br><b>> ${input.value}</b><br>`;
+        }
+        
+        const value = input.value.toLowerCase()
+        // check that the prompt value exists
+        if (data[value]) {
+            startTypeWriter(data[value]);
+        } else if (value === "clear" || value === "cls") {
+            output.innerHTML = ""
+        } else {
+            startTypeWriter(`Error: No entry found for \`${input.value}\``)
+        }
+        input.value = "";
+    }
+});
